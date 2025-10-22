@@ -32,7 +32,7 @@ jobs:
       run: google-chrome --version
 
     - name: Run Pytest with HTML and Allure reporting
-      run: pytest -v --alluredir=reports/allure-results
+      run: pytest tests/ --alluredir=reports/allure-results
 
     - name: Download Allure CLI
       run: |
