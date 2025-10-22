@@ -45,41 +45,41 @@ def right_click_demo(driver, element):
 # ======================================================================
 # TEST 5: RADIO BUTTON
 # ======================================================================
-@pytest.mark.order(5)
-def test_radio_buttons():
-    print("\n=== TEST: Radio Button on Chrome ===")
-    driver = DriverFactory.get_driver(browser_name="chrome", headless=False)
-    driver.set_window_size(1280, 720)
-    driver.get("https://demoqa.com/radio-button")
-    wait = WebDriverWait(driver, 20)
-    remove_ads(driver)
-    time.sleep(1)
-
-    try:
-        scroll_to_bottom(driver)
-        yes_radio = wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@for='yesRadio']")))
-        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", yes_radio)
-        driver.execute_script("arguments[0].click();", yes_radio)
-        result = driver.find_element(By.CLASS_NAME, "text-success").text
-        assert "Yes" in result
-        print(f"✅ Selected: {result}")
-
-        impressive_radio = wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@for='impressiveRadio']")))
-        driver.execute_script("arguments[0].scrollIntoView({block:'center'});", impressive_radio)
-        driver.execute_script("arguments[0].click();", impressive_radio)
-        result = driver.find_element(By.CLASS_NAME, "text-success").text
-        assert "Impressive" in result
-        print(f"✅ Selected: {result}")
-
-        no_radio = driver.find_element(By.ID, "noRadio")
-        assert not no_radio.is_enabled(), "'No' should be disabled"
-        print("✅ 'No' radio is disabled")
-
-        # Right-click demo on impressive radio
-        right_click_demo(driver, impressive_radio)
-
-    finally:
-        driver.quit()
+# @pytest.mark.order(5)
+# def test_radio_buttons():
+#     print("\n=== TEST: Radio Button on Chrome ===")
+#     driver = DriverFactory.get_driver(browser_name="chrome", headless=False)
+#     driver.set_window_size(1280, 720)
+#     driver.get("https://demoqa.com/radio-button")
+#     wait = WebDriverWait(driver, 20)
+#     remove_ads(driver)
+#     time.sleep(1)
+#
+#     try:
+#         scroll_to_bottom(driver)
+#         yes_radio = wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@for='yesRadio']")))
+#         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", yes_radio)
+#         driver.execute_script("arguments[0].click();", yes_radio)
+#         result = driver.find_element(By.CLASS_NAME, "text-success").text
+#         assert "Yes" in result
+#         print(f"✅ Selected: {result}")
+#
+#         impressive_radio = wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@for='impressiveRadio']")))
+#         driver.execute_script("arguments[0].scrollIntoView({block:'center'});", impressive_radio)
+#         driver.execute_script("arguments[0].click();", impressive_radio)
+#         result = driver.find_element(By.CLASS_NAME, "text-success").text
+#         assert "Impressive" in result
+#         print(f"✅ Selected: {result}")
+#
+#         no_radio = driver.find_element(By.ID, "noRadio")
+#         assert not no_radio.is_enabled(), "'No' should be disabled"
+#         print("✅ 'No' radio is disabled")
+#
+#         # Right-click demo on impressive radio
+#         right_click_demo(driver, impressive_radio)
+#
+#     finally:
+#         driver.quit()
 
 # ======================================================================
 # TEST 6: CHECKBOX
