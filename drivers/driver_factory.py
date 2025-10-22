@@ -9,6 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 import os
+import tempfile  # <-- new import
 
 class DriverFactory:
     @staticmethod
@@ -21,12 +22,31 @@ class DriverFactory:
                 options = ChromeOptions()
                 if headless:
                     options.add_argument("--headless=new")
+                    options.add_argument("--no-sandbox")
+                    options.add_argument("--disable-dev-shm-usage")
+                    options.add_argument("--disable-gpu")
+                    options.add_argument("--disable-extensions")
+                    options.add_argument("--remote-debugging-port=9222")
+
+                    # ✅ Use a unique temporary user data dir to avoid conflicts in CI
+                    temp_dir = tempfile.mkdtemp()
+                    options.add_argument(f"--user-data-dir={temp_dir}")
+
                 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
             elif browser_name == "edge":
                 options = EdgeOptions()
                 if headless:
                     options.add_argument("--headless=new")
+                    options.add_argument("--no-sandbox")
+                    options.add_argument("--disable-dev-shm-usage")
+                    options.add_argument("--disable-gpu")
+                    options.add_argument("--disable-extensions")
+                    options.add_argument("--remote-debugging-port=9222")
+
+                    temp_dir = tempfile.mkdtemp()
+                    options.add_argument(f"--user-data-dir={temp_dir}")
+
                 try:
                     driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
                 except Exception as e:
@@ -44,6 +64,7 @@ class DriverFactory:
                 options = FirefoxOptions()
                 if headless:
                     options.add_argument("--headless")
+
                 driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
 
             else:
