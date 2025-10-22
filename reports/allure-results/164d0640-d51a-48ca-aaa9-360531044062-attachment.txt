@@ -1,0 +1,7 @@
+
+=== TEST: Dropdown on Chrome ===
+→ Scrolled to bottom of the page
+✅ Selected: Purple
+✅ Multi-selected: ['Volvo', 'Audi']
+✅ Deselected all
+→ Right-click performed on element: select

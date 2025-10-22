@@ -1,0 +1,26 @@
+
+=== Starting login test for Ramya Hunagund on chrome ===
+
+[Demo] Checking for broken links...
+Total links found: 15
+Error checking link: https://www.demoblaze.com/index.html -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: /index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846C690>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/index.html -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: /index.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846C7D0>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846CA50>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846CE10>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/cart.html -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: /cart.html (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846D090>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846D310>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846D590>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846D810>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846DA90>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/#carouselExampleIndicators -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846DD10>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/#carouselExampleIndicators -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846DF90>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820837AD50>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002820846E0D0>, 'Connection to www.demoblaze.com timed out. (connect timeout=5)'))
+Error checking link: https://www.demoblaze.com/# -> HTTPSConnectionPool(host='www.demoblaze.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002820846DE50>: Failed to resolve 'www.demoblaze.com' ([Errno 11001] getaddrinfo failed)"))
+[Demo] Broken links check completed.
+Clicked on login button.
+
+[Demo] Browser navigation commands...
+Navigated back.
+Navigated forward.
+Refreshed page.

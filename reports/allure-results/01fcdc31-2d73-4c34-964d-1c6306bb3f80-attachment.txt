@@ -1,0 +1,31 @@
+
+=== Starting signup test for user: Ramya Hunagund ===
+[Warning] Edge driver download failed: Could not reach host. Are you offline?
+[Fallback] Using local Edge driver from C:\WebDrivers\Edge\msedgedriver.exe
+
+[Demo] WebDriver Methods:
+Title: STORE
+Current URL: https://www.demoblaze.com/
+Window Handle: 7164C429692BF97AE5F2FF62303A45FE
+
+[Demo] Mouse Hover on Categories:
+Hovered on: CATEGORIES
+Hovered on: Phones
+Hovered on: Laptops
+Hovered on: Monitors
+
+[Demo] JavaScript Executor:
+→ Scrolled to bottom via JS
+→ Scrolled back to top
+
+[Feature] Opening signup modal...
+[Action] Entering signup details for user: Ramya Hunagund
+Alert Text: This user already exist.
+Alert accepted.
+
+[Demo] Window Handling:
+Switched to new window: www.google.com
+Returned to parent window.
+Screenshot saved at: C:\Users\Ascendion\PycharmProjects\Capstone\screenshots\signup_Ramya_Hunagund.png
+=== Signup test completed for user: Ramya Hunagund ===
+

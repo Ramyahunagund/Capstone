@@ -1,0 +1,7 @@
+
+=== TEST: Radio Button on Chrome ===
+→ Scrolled to bottom of the page
+✅ Selected: Yes
+✅ Selected: Impressive
+✅ 'No' radio is disabled
+→ Right-click performed on element: label

@@ -1,0 +1,91 @@
+
+=== Starting Add to Cart Test (Advanced) ===
+[Navigation] Page refreshed
+[Navigation] Back navigation
+[Navigation] Forward navigation
+[Feature] Loading products...
+  Product 1: Samsung galaxy s6 | Displayed: True | Enabled: True
+  Product 2: Nokia lumia 1520 | Displayed: True | Enabled: True
+  Product 3: Nexus 6 | Displayed: True | Enabled: True
+  Product 4: Samsung galaxy s7 | Displayed: True | Enabled: True
+  Product 5: Iphone 6 32gb | Displayed: True | Enabled: True
+[JS Executor] Scrolled 400px using JS
+[Alert] Alert text: Product added
+[Alert] Accepted successfully
+[Mouse Hover] Hovered over logo
+[Double Click] Performed on logo
+[Drag & Drop] Skipped: Message: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x32fe83+66515]
+	GetHandleVerifier [0x0x32fec4+66580]
+	(No symbol) [0x0x11dc48]
+	(No symbol) [0x0x12fc3b]
+	(No symbol) [0x0x12ed10]
+	(No symbol) [0x0x1250e2]
+	(No symbol) [0x0x123608]
+	(No symbol) [0x0x1269d4]
+	(No symbol) [0x0x126a68]
+	(No symbol) [0x0x16e2fd]
+	(No symbol) [0x0x16d867]
+	(No symbol) [0x0x1b4537]
+	(No symbol) [0x0x18b1cc]
+	(No symbol) [0x0x1acba7]
+	(No symbol) [0x0x18afc6]
+	(No symbol) [0x0x15c2ca]
+	(No symbol) [0x0x15d154]
+	GetHandleVerifier [0x0x5873b3+2521347]
+	GetHandleVerifier [0x0x582333+2500739]
+	GetHandleVerifier [0x0x357cd4+229924]
+	GetHandleVerifier [0x0x348238+165768]
+	GetHandleVerifier [0x0x34eced+193085]
+	GetHandleVerifier [0x0x338198+100072]
+	GetHandleVerifier [0x0x338330+100480]
+	GetHandleVerifier [0x0x3225ea+11066]
+	BaseThreadInitThunk [0x0x74c65d49+25]
+	RtlInitializeExceptionChain [0x0x7711d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7711d661+561]
+	(No symbol) [0x0]
+
+[Right Click] Failed: Message: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.66); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x32fe83+66515]
+	GetHandleVerifier [0x0x32fec4+66580]
+	(No symbol) [0x0x11dc48]
+	(No symbol) [0x0x12fc3b]
+	(No symbol) [0x0x12ed10]
+	(No symbol) [0x0x1250e2]
+	(No symbol) [0x0x123608]
+	(No symbol) [0x0x1269d4]
+	(No symbol) [0x0x126a68]
+	(No symbol) [0x0x16e2fd]
+	(No symbol) [0x0x16d867]
+	(No symbol) [0x0x1b4537]
+	(No symbol) [0x0x18b1cc]
+	(No symbol) [0x0x1acba7]
+	(No symbol) [0x0x18afc6]
+	(No symbol) [0x0x15c2ca]
+	(No symbol) [0x0x15d154]
+	GetHandleVerifier [0x0x5873b3+2521347]
+	GetHandleVerifier [0x0x582333+2500739]
+	GetHandleVerifier [0x0x357cd4+229924]
+	GetHandleVerifier [0x0x348238+165768]
+	GetHandleVerifier [0x0x34eced+193085]
+	GetHandleVerifier [0x0x338198+100072]
+	GetHandleVerifier [0x0x338330+100480]
+	GetHandleVerifier [0x0x3225ea+11066]
+	BaseThreadInitThunk [0x0x74c65d49+25]
+	RtlInitializeExceptionChain [0x0x7711d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7711d661+561]
+	(No symbol) [0x0]
+
+[Window Handling] Switched to About page
+[Window Handling] Closed About page window
+[Window Handling] Back to main window
+[Screenshot] Captured screenshot of main page
+[Scroll Demo] Scrolled to bottom of page
+[Feature] Navigated to Cart page
+✅ Add to Cart test executed with additional Selenium functions
+=== Test Completed ===
+

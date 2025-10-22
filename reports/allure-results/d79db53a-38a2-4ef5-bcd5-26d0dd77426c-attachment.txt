@@ -1,0 +1,41 @@
+
+=== Starting Add to Cart Test (Advanced) ===
+[Navigation] Page refreshed
+[Navigation] Back navigation
+[Navigation] Forward navigation
+[Feature] Loading products...
+  Product 1: Samsung galaxy s6 | Displayed: True | Enabled: True
+  Product 2: Nokia lumia 1520 | Displayed: True | Enabled: True
+  Product 3: Nexus 6 | Displayed: True | Enabled: True
+  Product 4: Samsung galaxy s7 | Displayed: True | Enabled: True
+  Product 5: Iphone 6 32gb | Displayed: True | Enabled: True
+[JS Executor] Scrolled 400px using JS
+[Alert] Alert text: Product added.
+[Alert] Accepted successfully
+[Mouse Hover] Hovered over logo
+[Double Click] Performed on logo
+[Drag & Drop] Skipped: Message: [Exception... "MarionetteCommands:MarionetteCommandsParent:_dispatchEvent: message reply cannot be cloned."  nsresult: "0x80004005 (DataCloneError)"  location: "<unknown>"  data: no]
+Stacktrace:
+@undefined:0:0
+
+[Right Click] Failed: Message: The element with the reference 8ebbecdc-6261-40f1-9f8c-8d912d1b6745 is stale; either its node document is not the active document, or it is no longer connected to the DOM; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+StaleElementReferenceError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:831:5
+getKnownElement@chrome://remote/content/marionette/json.sys.mjs:405:11
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:263:20
+cloneObject@chrome://remote/content/marionette/json.sys.mjs:59:24
+deserializeJSON@chrome://remote/content/marionette/json.sys.mjs:293:16
+json.deserialize@chrome://remote/content/marionette/json.sys.mjs:297:10
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:179:30
+
+[Window Handling] Switched to About page
+[Window Handling] Closed About page window
+[Window Handling] Back to main window
+[Screenshot] Captured screenshot of main page
+[Scroll Demo] Scrolled to bottom of page
+[Feature] Navigated to Cart page
+✅ Add to Cart test executed with additional Selenium functions
+=== Test Completed ===
+

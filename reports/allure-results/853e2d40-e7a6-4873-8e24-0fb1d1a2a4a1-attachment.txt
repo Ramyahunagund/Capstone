@@ -1,0 +1,95 @@
+[Warning] Edge driver download failed: Could not reach host. Are you offline?
+[Fallback] Using local Edge driver from C:\WebDrivers\Edge\msedgedriver.exe
+
+=== Starting Add to Cart Test (Advanced) ===
+[Navigation] Page refreshed
+[Navigation] Back navigation
+[Navigation] Forward navigation
+[Feature] Loading products...
+  Product 1: Samsung galaxy s6 | Displayed: True | Enabled: True
+  Product 2: Nokia lumia 1520 | Displayed: True | Enabled: True
+  Product 3: Nexus 6 | Displayed: True | Enabled: True
+  Product 4: Samsung galaxy s7 | Displayed: True | Enabled: True
+  Product 5: Iphone 6 32gb | Displayed: True | Enabled: True
+[JS Executor] Scrolled 400px using JS
+[Alert] Alert text: Product added.
+[Alert] Accepted successfully
+[Mouse Hover] Hovered over logo
+[Double Click] Performed on logo
+[Drag & Drop] Skipped: Message: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=141.0.3537.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef942585+51877]
+	GetHandleVerifier [0x0x7ff7ef9425e4+51972]
+	GetHandleVerifier [0x0x7ff7efaf8b75+1847445]
+	(No symbol) [0x0x7ff7ef6c4b66]
+	(No symbol) [0x0x7ff7ef6c37ad]
+	(No symbol) [0x0x7ff7ef6c4f7f]
+	(No symbol) [0x0x7ff7ef6b872a]
+	(No symbol) [0x0x7ff7ef6b6b7c]
+	(No symbol) [0x0x7ff7ef6ba54f]
+	(No symbol) [0x0x7ff7ef6ba60f]
+	(No symbol) [0x0x7ff7ef70666f]
+	(No symbol) [0x0x7ff7ef705b35]
+	(No symbol) [0x0x7ff7ef7491b0]
+	(No symbol) [0x0x7ff7ef72212a]
+	(No symbol) [0x0x7ff7ef6f667b]
+	(No symbol) [0x0x7ff7ef73f3d2]
+	(No symbol) [0x0x7ff7ef721df3]
+	(No symbol) [0x0x7ff7ef6f5b36]
+	(No symbol) [0x0x7ff7ef6f4d80]
+	(No symbol) [0x0x7ff7ef6f5973]
+	(No symbol) [0x0x7ff7ef7be4a5]
+	(No symbol) [0x0x7ff7ef7ba75d]
+	GetHandleVerifier [0x0x7ff7ef96cdc3+226019]
+	GetHandleVerifier [0x0x7ff7ef95bf91+156849]
+	GetHandleVerifier [0x0x7ff7ef964489+190889]
+	GetHandleVerifier [0x0x7ff7ef9496c4+80868]
+	GetHandleVerifier [0x0x7ff7ef949813+81203]
+	GetHandleVerifier [0x0x7ff7ef937d96+8886]
+	BaseThreadInitThunk [0x0x7ff94dbfe8d7+23]
+	RtlUserThreadStart [0x0x7ff94efcc53c+44]
+
+[Right Click] Failed: Message: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=141.0.3537.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ef942585+51877]
+	GetHandleVerifier [0x0x7ff7ef9425e4+51972]
+	GetHandleVerifier [0x0x7ff7efaf8b75+1847445]
+	(No symbol) [0x0x7ff7ef6c4b66]
+	(No symbol) [0x0x7ff7ef6c37ad]
+	(No symbol) [0x0x7ff7ef6c4f7f]
+	(No symbol) [0x0x7ff7ef6b872a]
+	(No symbol) [0x0x7ff7ef6b6b7c]
+	(No symbol) [0x0x7ff7ef6ba54f]
+	(No symbol) [0x0x7ff7ef6ba60f]
+	(No symbol) [0x0x7ff7ef70666f]
+	(No symbol) [0x0x7ff7ef705b35]
+	(No symbol) [0x0x7ff7ef7491b0]
+	(No symbol) [0x0x7ff7ef72212a]
+	(No symbol) [0x0x7ff7ef6f667b]
+	(No symbol) [0x0x7ff7ef73f3d2]
+	(No symbol) [0x0x7ff7ef721df3]
+	(No symbol) [0x0x7ff7ef6f5b36]
+	(No symbol) [0x0x7ff7ef6f4d80]
+	(No symbol) [0x0x7ff7ef6f5973]
+	(No symbol) [0x0x7ff7ef7be4a5]
+	(No symbol) [0x0x7ff7ef7ba75d]
+	GetHandleVerifier [0x0x7ff7ef96cdc3+226019]
+	GetHandleVerifier [0x0x7ff7ef95bf91+156849]
+	GetHandleVerifier [0x0x7ff7ef964489+190889]
+	GetHandleVerifier [0x0x7ff7ef9496c4+80868]
+	GetHandleVerifier [0x0x7ff7ef949813+81203]
+	GetHandleVerifier [0x0x7ff7ef937d96+8886]
+	BaseThreadInitThunk [0x0x7ff94dbfe8d7+23]
+	RtlUserThreadStart [0x0x7ff94efcc53c+44]
+
+[Window Handling] Switched to About page
+[Window Handling] Closed About page window
+[Window Handling] Back to main window
+[Screenshot] Captured screenshot of main page
+[Scroll Demo] Scrolled to bottom of page
+[Feature] Navigated to Cart page
+✅ Add to Cart test executed with additional Selenium functions
+=== Test Completed ===
+

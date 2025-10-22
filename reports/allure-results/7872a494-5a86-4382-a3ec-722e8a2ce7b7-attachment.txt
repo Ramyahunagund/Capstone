@@ -1,0 +1,2 @@
+[Warning] Edge driver download failed: Could not reach host. Are you offline?
+[Fallback] Using local Edge driver from C:\WebDrivers\Edge\msedgedriver.exe

@@ -1,0 +1,24 @@
+[Warning] Edge driver download failed: Could not reach host. Are you offline?
+[Fallback] Using local Edge driver from C:\WebDrivers\Edge\msedgedriver.exe
+
+=== Starting login test for Ramya Hunagund on edge ===
+
+[Demo] Checking for broken links...
+Total links found: 15
+[Demo] Broken links check completed.
+Clicked on login button.
+
+[Demo] Browser navigation commands...
+Navigated back.
+Navigated forward.
+Refreshed page.
+Opened login modal.
+Entered username: Ramya Hunagund
+Entered password.
+Clicked login button.
+[Login] Login successful.
+[Feature] Page refreshed post-login.
+User is on expected page after refresh.
+User logged out successfully.
+
+=== Login test executed successfully for user: Ramya Hunagund ===

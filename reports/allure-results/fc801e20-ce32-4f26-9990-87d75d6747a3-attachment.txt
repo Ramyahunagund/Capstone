@@ -1,0 +1,3 @@
+
+=== TEST: File Upload on Chrome ===
+[Error] Failed to initialize driver for chrome: Could not reach host. Are you offline?

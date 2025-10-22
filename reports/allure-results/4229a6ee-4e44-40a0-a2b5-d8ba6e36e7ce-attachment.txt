@@ -1,0 +1,4 @@
+
+=== Starting Place Order Test for Ramya ===
+[Login] Using already logged-in session
+[Step 1] Opening a product...

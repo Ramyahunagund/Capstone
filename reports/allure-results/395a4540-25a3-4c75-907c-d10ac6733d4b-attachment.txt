@@ -1,0 +1,41 @@
+
+=== Starting Add to Cart Test ===
+[Login] Using already logged-in session
+[Feature] Loading products...
+[Feature] Total products found: 9
+  Product 1: Samsung galaxy s6
+  Product 2: Nokia lumia 1520
+  Product 3: Nexus 6
+  Product 4: Samsung galaxy s7
+  Product 5: Iphone 6 32gb
+[Step] Opening first product...
+[Feature] Scrolled down 500px.
+[Feature] Adding product to cart...
+[Alert] No alert appeared.
+[Feature] Drag simulation skipped: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=141.0.7390.66)
+Stacktrace:
+	GetHandleVerifier [0x0x57fe83+66515]
+	GetHandleVerifier [0x0x57fec4+66580]
+	(No symbol) [0x0x36dc48]
+	(No symbol) [0x0x34c18d]
+	(No symbol) [0x0x3e1a4e]
+	(No symbol) [0x0x3fc4d9]
+	(No symbol) [0x0x3dafc6]
+	(No symbol) [0x0x3ac2ca]
+	(No symbol) [0x0x3ad154]
+	GetHandleVerifier [0x0x7d73b3+2521347]
+	GetHandleVerifier [0x0x7d2333+2500739]
+	GetHandleVerifier [0x0x5a7cd4+229924]
+	GetHandleVerifier [0x0x598238+165768]
+	GetHandleVerifier [0x0x59eced+193085]
+	GetHandleVerifier [0x0x588198+100072]
+	GetHandleVerifier [0x0x588330+100480]
+	GetHandleVerifier [0x0x5725ea+11066]
+	BaseThreadInitThunk [0x0x74c65d49+25]
+	RtlInitializeExceptionChain [0x0x7711d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7711d661+561]
+
+[Feature] Right-click failed: cannot access local variable 'logo' where it is not associated with a value
+[Feature] Opening new window and switching...
