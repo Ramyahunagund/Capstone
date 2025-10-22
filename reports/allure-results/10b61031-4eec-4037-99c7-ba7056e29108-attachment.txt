@@ -1,0 +1,5 @@
+
+=== TEST: File Upload on Chrome ===
+→ Scrolled to bottom of the page
+✅ File uploaded: C:\fakepath\some.txt
+→ Right-click performed on element: input

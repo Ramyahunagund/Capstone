@@ -1,0 +1,23 @@
+
+=== TEST: Checkbox on Chrome ===
+→ Scrolled to bottom of the page
+✅ Selected: You have selected :
+desktop
+notes
+commands
+✅ Updated: You have selected :
+desktop
+notes
+commands
+documents
+workspace
+react
+angular
+veu
+office
+public
+private
+classified
+general
+→ Right-click performed on element: span
+✅ Checkbox Test Completed

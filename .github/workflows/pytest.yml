@@ -1,40 +1,59 @@
-# .github/workflows/selenium-tests.yml
-name: Selenium Tests
+name: Run Selenium Tests with Allure and HTML Report
 
 on:
   push:
-    branches:
-      - main
+    branches: [ dev ]
   pull_request:
-    branches:
-      - main
+    branches: [ dev ]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        browser: [chrome, firefox]
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.13'
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        # Install drivers
-        pip install webdriver-manager
+        pip install pytest pytest-html allure-pytest
 
-    - name: Run Selenium tests
-      env:
-        CI: true
+    - name: Set up Chrome
+      uses: browser-actions/setup-chrome@v1
+
+    - name: Verify Chrome installed
+      run: google-chrome --version
+
+    - name: Run Pytest with HTML and Allure reporting
+      run: pytest -v --alluredir=reports/allure-results
+
+    - name: Download Allure CLI
       run: |
-        pytest -v --browser ${{ matrix.browser }} --alluredir=reports/allure-results
+          ALLURE_VERSION=2.30.0
+          wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${ALLURE_VERSION}/allure-c… -O allure.tgz
+          tar -zxvf allure.tgz
+          sudo mv allure-${ALLURE_VERSION} /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+          allure --version
+
+    - name: Generate Allure HTML Report
+      run: allure generate reports/allure-results -o reports/allure-report --clean
+
+    - name: Upload Pytest HTML report
+      uses: actions/upload-artifact@v4
+      with:
+        name: pytest-html-report
+        path: reports/report.html
+
+    - name: Upload Allure report
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-report
+        path: reports/allure-report

@@ -10,7 +10,6 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 import os
 
-
 class DriverFactory:
     @staticmethod
     def get_driver(browser_name="chrome", headless=False):
@@ -20,23 +19,14 @@ class DriverFactory:
         try:
             if browser_name == "chrome":
                 options = ChromeOptions()
-                options.add_experimental_option("excludeSwitches", ["enable-logging"])  # Suppress DevTools log
-                options.add_argument("--disable-extensions")
-                options.add_argument("--disable-infobars")
-                options.add_argument("--no-sandbox")
-                options.add_argument("--disable-dev-shm-usage")
                 if headless:
                     options.add_argument("--headless=new")
                 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
             elif browser_name == "edge":
                 options = EdgeOptions()
-                options.add_experimental_option("excludeSwitches", ["enable-logging"])
-                options.add_argument("--disable-extensions")
-                options.add_argument("--disable-infobars")
                 if headless:
                     options.add_argument("--headless=new")
-
                 try:
                     driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()), options=options)
                 except Exception as e:
@@ -54,8 +44,7 @@ class DriverFactory:
                 options = FirefoxOptions()
                 if headless:
                     options.add_argument("--headless")
-                service = FirefoxService(GeckoDriverManager().install(), log_path=os.devnull)  # Suppress log
-                driver = webdriver.Firefox(service=service, options=options)
+                driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
 
             else:
                 raise ValueError(f"Unsupported browser: {browser_name}")

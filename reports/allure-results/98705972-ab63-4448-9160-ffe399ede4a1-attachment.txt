@@ -1,0 +1,5 @@
+
+=== TEST: Drag and Drop on Chrome ===
+→ Scrolled to bottom of the page
+✅ Target text after drop: Dropped!
+→ Right-click performed on element: div

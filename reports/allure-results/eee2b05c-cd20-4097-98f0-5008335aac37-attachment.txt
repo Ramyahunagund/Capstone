@@ -1,0 +1,29 @@
+
+=== Starting signup test for user: Ramya Hunagund ===
+
+[Demo] WebDriver Methods:
+Title: STORE
+Current URL: https://www.demoblaze.com/
+Window Handle: 017f612e-6cef-49d6-a7e8-4e44e3c0f43d
+
+[Demo] Mouse Hover on Categories:
+Hovered on: CATEGORIES
+Hovered on: Phones
+Hovered on: Laptops
+Hovered on: Monitors
+
+[Demo] JavaScript Executor:
+→ Scrolled to bottom via JS
+→ Scrolled back to top
+
+[Feature] Opening signup modal...
+[Action] Entering signup details for user: Ramya Hunagund
+Alert Text: This user already exist.
+Alert accepted.
+
+[Demo] Window Handling:
+Switched to new window: Google
+Returned to parent window.
+Screenshot saved at: C:\Users\Ascendion\PycharmProjects\Capstone\screenshots\signup_Ramya_Hunagund.png
+=== Signup test completed for user: Ramya Hunagund ===
+
