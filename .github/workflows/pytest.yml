@@ -2,9 +2,9 @@ name: Run Selenium Tests with Allure and HTML Report
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ main ]
   pull_request:
-    branches: [ dev ]
+    branches: [ main ]
 
 jobs:
   test:
